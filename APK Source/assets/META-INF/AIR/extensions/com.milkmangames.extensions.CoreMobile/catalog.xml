@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/milkmangames/nativeextensions/events/CMDialogEvent" mod="1395970928782" signatureChecksum="3638148558" >
+        <def id="com.milkmangames.nativeextensions.events:CMDialogEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="com/milkmangames/nativeextensions/CMDialogDispatcher" mod="1395968996660" signatureChecksum="4272855607" >
+        <def id="com.milkmangames.nativeextensions:CMDialogDispatcher" /> 
+        <dep id="com.milkmangames.nativeextensions.events:CMDialogEvent" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="com/milkmangames/nativeextensions/CoreMobile" mod="1411002994078" signatureChecksum="1860655286" >
+        <def id="com.milkmangames.nativeextensions:CoreMobile" /> 
+        <dep id="com.milkmangames.nativeextensions.events:CMDialogEvent" type="e" /> 
+        <dep id="JSON" type="e" /> 
+        <dep id="com.milkmangames.nativeextensions.events:CMLocalNotificationEvent" type="e" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="com.milkmangames.nativeextensions:DeviceMotionData" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="com.milkmangames.nativeextensions.events:CMNetworkEvent" type="e" /> 
+        <dep id="com.milkmangames.nativeextensions:CMDialogDispatcher" type="e" /> 
+        <dep id="Date" type="e" /> 
+        <dep id="__AS3__.vec:Vector" type="e" /> 
+        <dep id="com.milkmangames.nativeextensions:CMInputType" type="e" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="flash.utils:getDefinitionByName" type="e" /> 
+        <dep id="com.milkmangames.nativeextensions.events:CMDialogEvent" type="s" /> 
+        <dep id="com.milkmangames.nativeextensions.events:CMNetworkEvent" type="s" /> 
+        <dep id="Date" type="s" /> 
+        <dep id="com.milkmangames.nativeextensions:CMDialogDispatcher" type="s" /> 
+        <dep id="com.milkmangames.nativeextensions.events:CMLocalNotificationEvent" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="com.milkmangames.nativeextensions:CMInputType" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="com.milkmangames.nativeextensions:DeviceMotionData" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="Error" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="_39e300948c17294c22542d92f3dc6c8a2041e6fd76fff4209c861db1ce514ff5_flash_display_Sprite" mod="1411003139339" signatureChecksum="3845880291" >
+        <def id="_39e300948c17294c22542d92f3dc6c8a2041e6fd76fff4209c861db1ce514ff5_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="com/milkmangames/nativeextensions/events/CMLocalNotificationEvent" mod="1395970953503" signatureChecksum="638492084" >
+        <def id="com.milkmangames.nativeextensions.events:CMLocalNotificationEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="com/milkmangames/nativeextensions/DeviceMotionData" mod="1405633489105" signatureChecksum="2190436310" >
+        <def id="com.milkmangames.nativeextensions:DeviceMotionData" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/milkmangames/nativeextensions/CMInputType" mod="1401315238560" signatureChecksum="1806710684" >
+        <def id="com.milkmangames.nativeextensions:CMInputType" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/milkmangames/nativeextensions/CMNetworkType" mod="1405633776151" signatureChecksum="3106879568" >
+        <def id="com.milkmangames.nativeextensions:CMNetworkType" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/milkmangames/nativeextensions/events/CMNetworkEvent" mod="1405634471732" signatureChecksum="1721465301" >
+        <def id="com.milkmangames.nativeextensions.events:CMNetworkEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="c98382a718568c5197f6252ab8e27c6f0cd66692dc53d20342abc57b648b9ae2"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

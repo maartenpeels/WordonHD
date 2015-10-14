@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.14.0" build="20150123" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/jirbo/airadc/AirAdColony" mod="1415656840000" signatureChecksum="3639432931" >
+        <def id="com.jirbo.airadc:AirAdColony" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="flash.filesystem:FileStream" type="e" /> 
+        <dep id="flash.system:Capabilities" type="e" /> 
+        <dep id="XML" type="e" /> 
+        <dep id="flash.filesystem:FileMode" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.filesystem:FileStream" type="s" /> 
+        <dep id="flash.filesystem:File" type="s" /> 
+        <dep id="XML" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="_eec1df84516e7377a3f2dfdd75e963e8bcb0d35c0792871a74230edf1a2674af_flash_display_Sprite" mod="1424972685234" signatureChecksum="1033730921" >
+        <def id="_eec1df84516e7377a3f2dfdd75e963e8bcb0d35c0792871a74230edf1a2674af_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="9a4ad0c605078fcd8936206f0c9d45f95d1669690f61e63d07a5dbbc679bc7b1"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

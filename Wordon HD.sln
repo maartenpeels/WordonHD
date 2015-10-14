@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordon HD", "Wordon HD\Wordon HD.csproj", "{5FF9F8EB-4FE4-4E5C-80BA-6D84A6F9CED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word Chooser", "Word Chooser\Word Chooser.csproj", "{D4943890-DD92-44A0-AADF-CC627B8D1CA2}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Design", "Design\Design.modelproj", "{552C9B34-3B1B-482C-8044-70D414F27C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordonHD V2", "WordonHD V2\WordonHD V2.csproj", "{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FF9F8EB-4FE4-4E5C-80BA-6D84A6F9CED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF9F8EB-4FE4-4E5C-80BA-6D84A6F9CED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF9F8EB-4FE4-4E5C-80BA-6D84A6F9CED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF9F8EB-4FE4-4E5C-80BA-6D84A6F9CED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4943890-DD92-44A0-AADF-CC627B8D1CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4943890-DD92-44A0-AADF-CC627B8D1CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4943890-DD92-44A0-AADF-CC627B8D1CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4943890-DD92-44A0-AADF-CC627B8D1CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{552C9B34-3B1B-482C-8044-70D414F27C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552C9B34-3B1B-482C-8044-70D414F27C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552C9B34-3B1B-482C-8044-70D414F27C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552C9B34-3B1B-482C-8044-70D414F27C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

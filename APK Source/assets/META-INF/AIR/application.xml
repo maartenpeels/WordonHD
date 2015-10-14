@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/14.0">
+  <id>com.flaregames.wordon</id>
+  <versionNumber>1.8.8</versionNumber>
+  <supportedProfiles>mobileDevice</supportedProfiles>
+  <filename>WordOn HD</filename>
+  <name>WordOn HD</name>
+  <description>The new addictive word game</description>
+  <copyright>Huckleberry, 2015</copyright>
+  <extensions>
+    <extensionID>com.milkmangames.extensions.GoViral</extensionID>
+    <extensionID>com.milkmangames.extensions.EasyPush</extensionID>
+    <extensionID>com.milkmangames.extensions.StoreKit</extensionID>
+	<extensionID>com.milkmangames.extensions.AndroidIAB</extensionID>
+    <extensionID>com.tapjoy.extensions</extensionID>
+	<extensionID>com.freshplanet.ane.AirDeviceId</extensionID>
+	<extensionID>com.milkmangames.extensions.CoreMobile</extensionID>
+	<extensionID>com.heyzap.sdk.extensions</extensionID>
+	<extensionID>so.cuo.platform.chartboost</extensionID>
+	<extensionID>eu.alebianco.air.extensions.analytics.NativeGATracker</extensionID>
+	<extensionID>com.jirbo.airadc.AirAdColony</extensionID>
+  </extensions>
+  <android>
+	<colorDepth>16bit</colorDepth>
+    <manifestAdditions><![CDATA[
+			
+			<manifest android:installLocation="auto">
+				
+				<uses-sdk android:targetSdkVersion="19" />
+				<uses-sdk android:minSdkVersion="9" />
+				
+				<!-- Basic requirements -->
+				<uses-permission android:name="android.permission.INTERNET"/>
+				<!-- <uses-permission android:name="android.permission.CAMERA"/> --> <!-- Restore this whenever the bug with GoViral is fixed -->
+				<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+				
+				<!-- Required by Tapjoy and AdColony -->
+				<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+				<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+				
+				<!-- Required by Tapjoy and Heyzap -->
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+				
+				<!-- Required for billing -->
+				<uses-permission android:name="com.android.vending.BILLING" />
+				
+				<!-- Required for reinstating local notifications after reboot -->
+				<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+				
+				<!-- Required for GCM push notifications -->
+				<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+				<uses-permission android:name="android.permission.GET_TASKS"/>
+				<uses-permission android:name="android.permission.WAKE_LOCK"/>
+				<uses-permission android:name="android.permission.VIBRATE"/>
+				<permission android:protectionLevel="signature" android:name="air.com.flaregames.wordon.permission.C2D_MESSAGE" />
+				<uses-permission android:name="air.com.flaregames.wordon.permission.C2D_MESSAGE" />
+				<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+				
+				<!-- Device filtering -->
+				<uses-feature android:required="false" android:name="android.hardware.touchscreen.multitouch"/>
+				<uses-feature android:required="false" android:name="android.hardware.camera"/>
+				<uses-feature android:required="false" android:name="android.hardware.camera.autofocus"/>
+                <uses-feature android:required="false" android:name="android.hardware.camera.flash"/> 
+				
+				<application android:hardwareAccelerated="true">
+					
+					<!-- Remote notifications -->
+					<receiver android:name="com.milkmangames.extensions.android.push.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+						<intent-filter>
+							<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+							<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+							<category android:name="air.com.flaregames.wordon" />
+						</intent-filter>
+					</receiver>
+					<service android:name="com.milkmangames.extensions.android.push.GCMIntentService" />
+					
+					<!-- Local notifications -->
+					<receiver android:name="com.milkmangames.extensions.android.CMLocalNotificationReceiver" />
+					<receiver android:name="com.milkmangames.extensions.android.CMBootReceiver">
+						<intent-filter>
+							<action android:name="android.intent.action.BOOT_COMPLETED"/>
+						</intent-filter>
+					</receiver>
+					
+					<!-- Facebook activity control -->
+					<activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="Login"/>
+					<provider android:authorities="com.facebook.app.NativeAppCallContentProvider175659022571339" android:name="com.facebook.NativeAppCallContentProvider" />
+					<meta-data android:name="air.com.flaregames.wordon.ApplicationId" android:value="175659022571339"/>
+					
+					<!-- Heyzap receiver -->
+					<activity android:name="com.heyzap.sdk.ads.HeyzapInterstitialActivity" android:configChanges="" />
+					<activity android:name="com.heyzap.sdk.ads.HeyzapVideoActivity" android:configChanges="" />
+					<receiver android:name="com.heyzap.sdk.ads.PackageAddedReceiver">
+						<intent-filter>
+							<data android:scheme="package"/>
+							<action android:name="android.intent.action.PACKAGE_ADDED"/>
+						</intent-filter>
+					</receiver>
+					
+					<!-- TapJoy activities -->
+					<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+					<activity android:name="com.tapjoy.TJCOffersWebView" android:configChanges="keyboardHidden|orientation|screenSize" />
+					<activity android:name="com.tapjoy.TapjoyFullScreenAdWebView" android:configChanges="keyboardHidden|orientation|screenSize" />
+					<activity android:name="com.tapjoy.TapjoyVideoView" android:configChanges="keyboardHidden|orientation|screenSize" />
+					<activity android:name="com.tapjoy.TJAdUnitView" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" />
+					<activity android:name="com.tapjoy.mraid.view.ActionHandler" android:configChanges="keyboardHidden|orientation|screenSize" />
+					<activity android:name="com.tapjoy.mraid.view.Browser" android:configChanges="keyboardHidden|orientation|screenSize" />
+					
+					<!-- AdColony activities -->
+					<activity android:launchMode="singleTop">
+						<intent-filter>
+							<action android:name="android.intent.action.MAIN"/>
+							<category android:name="android.intent.category.LAUNCHER"/>
+						</intent-filter>
+					</activity>
+					<activity android:name="com.jirbo.adcolony.AdColonyOverlay" android:windowSoftInputMode="adjustNothing" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+					<activity android:name="com.jirbo.adcolony.AdColonyFullscreen" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+					<activity android:name="com.jirbo.adcolony.AdColonyBrowser" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+					
+				</application>
+				
+			</manifest>
+			
+		]]></manifestAdditions>
+  </android>
+  <initialWindow>
+    <title>WordOn HD</title>
+    <content>wordon.swf</content>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <autoOrients>false</autoOrients>
+    <aspectRatio>portrait</aspectRatio>
+    <renderMode>gpu</renderMode>
+    <softKeyboardBehavior>pan</softKeyboardBehavior>
+  </initialWindow>
+  <supportedLanguages>en de es fr it nl sv</supportedLanguages>
+  <icon>
+    <image36x36>icons/icon_36.png</image36x36>
+    <image48x48>icons/icon_48.png</image48x48>
+    <image72x72>icons/icon_72.png</image72x72>
+    <image96x96>icons/icon_96.png</image96x96>
+    <image144x144>icons/icon_144.png</image144x144>
+    <!-- <image192x192>icons/icon_192.png</image192x192> -->
+  </icon>
+</application>

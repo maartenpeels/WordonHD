@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8f7c6b66-972f-4825-a80d-643c00233f17" name="design" linkedPackageId="a2234f45-4a92-4afa-8b4f-d50a1264f6f4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3d9b16b6-e686-499f-9bed-7b5e774cdf3f">
+      <profileInstance Id="bb0bdeb5-3ae6-46eb-a256-5b61f04c8fda" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="26a3c5d2-6067-4314-994c-4eb7cebfc51d">
+      <profileInstance Id="8ae98449-694a-463f-989e-6cf0d3438ad4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="024ba9ab-0fc9-4935-b03d-5bd39839515f" name="Main" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2f70b659-8fdb-4637-a304-fbde7d6e7b0c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7137da40-a49c-4c08-a7fe-122287f77417" name="Letter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ada3fd40-ac83-4c04-82da-54b4450b018e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bde08fb4-bf06-486f-a08a-e1b9f9df9c91" name="Word" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="23b3cafd-aff9-4632-b7f9-2490fd0c1791" />
+        <targetEnds>
+          <association Id="1fddaa08-cff4-4e00-bcf2-4df3bc93fde4" isDerived="false" sourceEndRoleName="Word" targetEndRoleName="Letter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7137da40-a49c-4c08-a7fe-122287f77417" LastKnownName="Letter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="770ee4ec-e38a-47cf-b6c1-eacee628e35b" name="Word" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35deacde-4699-4be2-9085-2f448685836d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="223ec8fe-5a39-41ca-8be1-2bacf77952a8" name="Letter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="a8f24e66-b978-453d-b8d4-ca1ed5daee35" name="Lower" value="*">
+                      <elementDefinition Id="2eba5836-a473-4633-b7c5-864ab9d7f410" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3ab627be-0e69-436b-9af7-2a822d6c17cf" name="Upper" value="*">
+                      <elementDefinition Id="fc661922-3c05-45bc-85fb-f7a9558b52f6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cb1747be-2e73-4eba-bfed-48383052b5c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="79fd7acc-2704-4f38-8813-36d1408f48b7" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b3a8b488-b940-4c99-b59c-d75fd54f6e55" name="Grid" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b05d57f-30bc-4df2-ad90-2e68b8273fd9" />
+        <targetEnds>
+          <association Id="cfce39b9-faac-4ab2-a03d-76e014a5dc3f" isDerived="false" sourceEndRoleName="Grid" targetEndRoleName="Word" isLeaf="false" isAbstract="false">
+            <classMoniker Id="bde08fb4-bf06-486f-a08a-e1b9f9df9c91" LastKnownName="Word" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7d5b931-ee3b-449b-bc0a-12435cff833a" name="Grid" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9a7190d7-c144-4db6-b2af-c693a6602aae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa020427-ae71-40a3-bc1d-ae6469acb56d" name="Word" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6540f673-1062-4725-89ed-7fefcafeb73c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9928405b-6393-4f07-aa4f-b38ee444c309" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a2234f45-4a92-4afa-8b4f-d50a1264f6f4" name="Design">
+    <elementDefinition Id="07d0ffb9-b54d-472d-8efb-d202361d6815" />
+  </package>
+</logicalClassDesignerModel>

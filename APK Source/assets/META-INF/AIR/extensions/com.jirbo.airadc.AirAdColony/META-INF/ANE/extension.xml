@@ -1,0 +1,28 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.7">
+  <id>com.jirbo.airadc.AirAdColony</id>
+  <versionNumber>2.0.8</versionNumber>
+  <platforms>
+    <platform name="Android-x86">
+      <applicationDeployment>
+        <nativeLibrary>airadcolony.jar</nativeLibrary>
+        <initializer>com.jirbo.airadc.AirADC</initializer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>airadcolony.jar</nativeLibrary>
+        <initializer>com.jirbo.airadc.AirADC</initializer>
+      </applicationDeployment>
+    </platform>
+    <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libAirAdColony.a</nativeLibrary>
+        <initializer>InitADCExtension</initializer>
+        <finalizer>FinalizeADCExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="default">
+      <applicationDeployment />
+    </platform>
+  </platforms>
+</extension>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.9.1" build="1447119" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="_39a35374fe43247786ca6651f0684e9993ae85c3d90152569d4c1cd5777c822c_flash_display_Sprite" mod="1381490964790" signatureChecksum="3668080701" >
+        <def id="_39a35374fe43247786ca6651f0684e9993ae85c3d90152569d4c1cd5777c822c_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="eu/alebianco/core/Enum" mod="1369939634000" signatureChecksum="2368507926" >
+        <def id="eu.alebianco.core:Enum" /> 
+        <dep id="eu.alebianco.core:EnumConstants" type="e" /> 
+        <dep id="flash.utils:describeType" type="e" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="eu.alebianco.errors:EnumError" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="eu.alebianco.core:EnumConstants" type="s" /> 
+        <dep id="XML" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/HitType" mod="1381442859000" signatureChecksum="1492229836" >
+        <def id="eu.alebianco.air.extensions.analytics:HitType" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.core:Enum" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/IHitBuilder" mod="1378633498000" signatureChecksum="3103337941" >
+        <def id="eu.alebianco.air.extensions.analytics.api:IHitBuilder" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:Hit" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/IViewBuilder" mod="1378633498000" signatureChecksum="538059839" >
+        <def id="eu.alebianco.air.extensions.analytics.api:IViewBuilder" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IHitBuilder" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/core/IDisposable" mod="1369939634000" signatureChecksum="2787712550" >
+        <def id="eu.alebianco.core:IDisposable" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/IAnalytics" mod="1381442859000" signatureChecksum="692831925" >
+        <def id="eu.alebianco.air.extensions.analytics.api:IAnalytics" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:ITracker" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.core:IDisposable" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/Analytics" mod="1381442859000" signatureChecksum="3301376116" >
+        <def id="eu.alebianco.air.extensions.analytics:Analytics" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:ITracker" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IAnalytics" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/ISocialBuilder" mod="1381442859000" signatureChecksum="1212888230" >
+        <def id="eu.alebianco.air.extensions.analytics.api:ISocialBuilder" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IHitBuilder" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/Hit" mod="1378633498000" signatureChecksum="2184853140" >
+        <def id="eu.alebianco.air.extensions.analytics.api:Hit" /> 
+        <dep id="eu.alebianco.air.extensions.analytics:HitType" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/IExceptionBuilder" mod="1378633498000" signatureChecksum="3045865836" >
+        <def id="eu.alebianco.air.extensions.analytics.api:IExceptionBuilder" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IHitBuilder" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/IProduct" mod="1378633498000" signatureChecksum="3960806948" >
+        <def id="eu.alebianco.air.extensions.analytics.api:IProduct" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/ITimingBuilder" mod="1378633498000" signatureChecksum="3168617225" >
+        <def id="eu.alebianco.air.extensions.analytics.api:ITimingBuilder" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IHitBuilder" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/IProductBuilder" mod="1381442859000" signatureChecksum="3746449070" >
+        <def id="eu.alebianco.air.extensions.analytics.api:IProductBuilder" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:ITransactionBuilder" type="s" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IProduct" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/ITransactionBuilder" mod="1381442859000" signatureChecksum="3950148157" >
+        <def id="eu.alebianco.air.extensions.analytics.api:ITransactionBuilder" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IProductBuilder" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IHitBuilder" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/core/EnumConstants" mod="1369939634000" signatureChecksum="198526275" >
+        <def id="eu.alebianco.core:EnumConstants" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="eu.alebianco.core:Enum" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/errors/EnumError" mod="1369939634000" signatureChecksum="2289049881" >
+        <def id="eu.alebianco.errors:EnumError" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Error" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/ITracker" mod="1381442859000" signatureChecksum="2962723279" >
+        <def id="eu.alebianco.air.extensions.analytics.api:ITracker" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IViewBuilder" type="s" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:ISocialBuilder" type="s" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IExceptionBuilder" type="s" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IEventBuilder" type="s" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:ITransactionBuilder" type="s" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:Hit" type="s" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:ITimingBuilder" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.core:IDisposable" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="eu/alebianco/air/extensions/analytics/api/IEventBuilder" mod="1378633498000" signatureChecksum="1924677927" >
+        <def id="eu.alebianco.air.extensions.analytics.api:IEventBuilder" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="eu.alebianco.air.extensions.analytics.api:IHitBuilder" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <keep-as3-metadata>
+        <metadata name="Transient" />
+        <metadata name="Bindable" />
+        <metadata name="ChangeEvent" />
+        <metadata name="Managed" />
+        <metadata name="NonCommittingChangeEvent" />
+      </keep-as3-metadata>
+      <digests>
+        <digest type="SHA-256" signed="false" value="df37cd93c610ba1edd693692be9d4119766e94a30791fd522ddb11fde9ca14ce"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

@@ -1,0 +1,25 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+  <id>com.heyzap.sdk.extensions</id>
+  <versionNumber>1.0</versionNumber>
+  <platforms>
+    <platform name="iPhone-ARM">
+            <applicationDeployment>
+                <nativeLibrary>libHeyzapExtension.a</nativeLibrary>
+                <initializer>HeyzapExtInitializer</initializer>
+                <finalizer>HeyzapExtFinalizer</finalizer>
+            </applicationDeployment>
+    </platform>
+ 
+   <platform name="Android-ARM"> 
+        <applicationDeployment> 
+            <nativeLibrary>libHeyzap.jar</nativeLibrary> 
+            <initializer>com.heyzap.sdk.extensions.air.HeyzapExtension</initializer> 
+            <finalizer>com.heyzap.sdk.extensions.air.HeyzapExtension</finalizer> 
+        </applicationDeployment>
+    </platform>
+    
+    <platform name="default"> 
+        <applicationDeployment/> 
+    </platform> 
+  </platforms>
+</extension>

@@ -1,0 +1,23 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+    <id>com.tapjoy.extensions</id>
+    <versionNumber>1</versionNumber>
+    <platforms>
+		<platform name="Android-ARM">
+            <applicationDeployment>
+                <nativeLibrary>tapjoy.jar</nativeLibrary>
+                <initializer>com.tapjoy.extensions.TapjoyExtension</initializer>
+                <finalizer>com.tapjoy.extensions.TapjoyExtension</finalizer>
+            </applicationDeployment>
+	    </platform>
+        <platform name="iPhone-ARM">
+            <applicationDeployment>
+                <nativeLibrary>libTapjoyAIR.a</nativeLibrary>
+                <initializer>TapjoyExtInitializer</initializer>
+                <finalizer>TapjoyExtFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+        <platform name="default">
+            <applicationDeployment/>
+        </platform>
+    </platforms>
+</extension>

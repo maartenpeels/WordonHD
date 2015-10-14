@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_notification_ticker">Errore Google Play Services</string>
+    <string name="common_google_play_services_notification_needs_installation_title">"Un'applicazione richiede l'installazione di Google Play Services."</string>
+    <string name="common_google_play_services_notification_needs_update_title">"Un'applicazione richiede un aggiornamento di Google Play Services."</string>
+    <string name="common_google_play_services_needs_enabling_title">"Un'applicazione richiede l'attivazione di Google Play Services."</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Richiesta da %1$s</string>
+    <string name="common_google_play_services_install_title">Installa Google Play Services</string>
+    <string name="common_google_play_services_install_text_phone">"L'app non funzionerà senza Google Play Services, non presente sul tuo telefono."</string>
+    <string name="common_google_play_services_install_text_tablet">"L'app non funzionerà senza Google Play Services, non presente sul tuo tablet."</string>
+    <string name="common_google_play_services_install_button">Installa Google Play Services</string>
+    <string name="common_google_play_services_enable_title">Attiva Google Play Services</string>
+    <string name="common_google_play_services_enable_text">"L'app non funzionerà se non attivi Google Play Services."</string>
+    <string name="common_google_play_services_enable_button">Attiva Google Play Services</string>
+    <string name="common_google_play_services_update_title">Aggiorna Google Play Services</string>
+    <string name="common_google_play_services_update_text">"L'app non funzionerà se non aggiorni Google Play Services."</string>
+    <string name="common_google_play_services_network_error_title">Errore di rete</string>
+    <string name="common_google_play_services_network_error_text">È necessaria una connessione dati per connettersi a Google Play Services.</string>
+    <string name="common_google_play_services_invalid_account_title">Account non valido</string>
+    <string name="common_google_play_services_invalid_account_text">"L'account specificato non esiste su questo dispositivo. Scegli un altro account."</string>
+    <string name="common_google_play_services_unknown_issue">Problema sconosciuto con Google Play Services.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play Services</string>
+    <string name="common_google_play_services_unsupported_text">La piattaforma Google Play Services, su cui sono basate alcune delle tue applicazioni, non è supportata dal dispositivo in uso. Per assistenza, contatta il produttore.</string>
+    <string name="common_google_play_services_unsupported_date_text">La data sul dispositivo sembra sbagliata. Controllala.</string>
+    <string name="common_google_play_services_update_button">Aggiorna</string>
+    <string name="common_signin_button_text">Accedi</string>
+    <string name="common_signin_button_text_long">Accedi con Google</string>
+    <string name="flash_browser_plugin">Plugin Flash</string>
+    <string name="audio_files">File audio</string>
+    <string name="image_files">File di immagine</string>
+    <string name="video_files">File video</string>
+    <string name="empty_file_list">Nessun file trovato.</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Annulla</string>
+    <string name="button_continue">Continua</string>
+    <string name="file_save_as">Salva con nome:</string>
+    <string name="file_download">Scarica</string>
+    <string name="file_upload">Carica</string>
+    <string name="button_yes">Sì</string>
+    <string name="button_no">No</string>
+    <string name="app_name">WordOn HD</string>
+    <string name="IDA_CURL_SSL_SECURITY_WARNING">Avviso di sicurezza</string>
+    <string name="IDA_CURL_INTERFACE_THISSESS">Attendibile per la sessione</string>
+    <string name="IDA_CURL_INTERFACE_NOSESS">Annulla</string>
+    <string name="IDA_CURL_INTERFACE_OK">OK</string>
+    <string name="IDA_CURL_INTERFACE_UNVERSER_2">"Il server al quale l'applicazione si sta connettendo non è verificato."</string>
+    <string name="IDA_CURL_INTERFACE_ALLSESS">Considera sempre attendibile</string>
+    <string name="IDA_CURL_INTERFACE_SERVER"><b>Server:</b></string>
+    <string name="IDA_CURL_INTERFACE_TRUSTSER">Considerare attendibile questo server ed effettuare la connessione?</string>
+    <string name="IDA_CURL_INTERFACE_CNAME_MSG">Il nome del server (%1$s) non corrisponde al nome sul certificato (%2$s). Volete considerare il server attendibile e continuare?</string>
+    <string name="IDA_CURL_INTERFACE_VIEW_CERT"><u>Visualizza certificato</u></string>
+    <string name="IDA_CURL_INTERFACE_CERTIFICATE_DETAILS_TITLE"><u>Dettagli certificato</u></string>
+    <string name="IDA_CERTIFICATE_DETAILS"><b>Certificato:</b>"
+ 
+ "<u><b>Rilasciato a:</b></u>"
+ Nome comune:
+ %1$s
+ 
+ Organizzazione:
+ %2$s
+ 
+ Unità organizzativa:
+ %3$s
+ 
+ "<u><b>Emesso da:</b></u>"
+ Nome comune:
+ %4$s
+ 
+ Organizzazione:
+ %5$s
+ 
+ Unità organizzativa:
+ %6$s
+ 
+ "<u><b>Validità:</b></u>"
+ Emesso il:
+ %7$s
+ 
+ Scadenza:
+ %8$s "</string>
+    <string name="IDA_APP_WAITING_DEBUGGER_TITLE"><u>Adobe AIR: attesa connessione</u></string>
+    <string name="IDA_APP_UNABLE_LISTEN_ERROR"><u>Adobe AIR: ascolto sulla porta</u></string>
+    <string name="IDA_APP_WAITING_DEBUGGER_WARNING"><u>"L'applicazione AIR è in attesa della connessione del debugger. L'operazione potrebbe richiedere fino a %d secondi."</u></string>
+    <string name="IDA_APP_DEBUGGER_TIMEOUT_INFO"><u>Impossibile connettere il debugger.</u></string>
+    <string name="app_version">APP_VERSION</string>
+    <string name="button_install">Installa</string>
+    <string name="button_exit">Esci</string>
+    <string name="title_adobe_air"><b>Adobe® AIR®</b></string>
+    <string name="text_runtime_required">"Questa applicazione richiede Adobe AIR.
+
+"</string>
+    <string name="text_install_runtime">Per continuare, installate Adobe AIR su questo dispositivo.</string>
+    <string name="text_runtime_on_external_storage">"Per continuare, installate Adobe AIR su questo dispositivo oppure uscite dall'applicazione e montate la scheda SD che contiene Adobe AIR prima di riavviarla."</string>
+    <string name="text_gamepreview_loading">Caricamento in corso...</string>
+    <string name="text_gamepreview_loading_error">Impossibile caricare il gioco.</string>
+    <string name="text_install_gamepreview_app">Installa adesso</string>
+    <string name="text_air_missing_header">Adobe AIR necessario</string>
+    <string name="text_air_missing_text">"È necessario installare Adobe AIR per utilizzare l'anteprima del gioco."</string>
+    <string name="button_install_air_from_playstore">Installazione da Play Store.</string>
+    <string name="text_dont_show_again">Non mostrare in futuro.</string>
+    <string name="auth_client_using_bad_version_title">"Un'app ha tentato di usare una versione non valida di Play Services."</string>
+    <string name="auth_client_needs_enabling_title">"Un'applicazione richiede l'attivazione di Google Play Services."</string>
+    <string name="auth_client_needs_installation_title">"Un'applicazione richiede l'installazione di Google Play Services."</string>
+    <string name="auth_client_needs_update_title">"Un'applicazione richiede un aggiornamento di Google Play Services."</string>
+    <string name="auth_client_play_services_err_notification_msg">Errore Google Play Services</string>
+    <string name="auth_client_requested_by_msg">Richiesta da %1$s</string>
+</resources>
