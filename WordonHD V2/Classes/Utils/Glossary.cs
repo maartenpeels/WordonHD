@@ -25,7 +25,7 @@ namespace WordonHD_V2.Classes.Utils
         {
             if (_instance == null)
             {
-                Logger.Log("Glossary does not exists. use new Glossary() before using Instance");
+                Logger.Log("Glossary does not exists. use new Glossary() before using Instance", Type.DEBUG);
                 return null;
             }
             return _instance;
@@ -37,30 +37,31 @@ namespace WordonHD_V2.Classes.Utils
             string blobPath = $"lang\\{lang}3.blob";
             if (!File.Exists(langPath) || !File.Exists(blobPath))
             {
-                Console.WriteLine("Language file not found.");
-                Logger.Log("");
+                Logger.Log("Language file not found.", Type.INFO);
                 return;
             }
 
             _glossary.Add(lang, File.ReadAllLines(langPath));
-            _binTree.Add(lang, File.ReadAllBytes(blobPath));
+
+            byte[] langBytes = File.ReadAllBytes(blobPath);
+            _binTree.Add(lang, langBytes);
         }
 
         public string[] GetAllPossibleWords(string lang, List<string> letters)
         {
             if (!_binTree.ContainsKey(lang) || !_glossary.ContainsKey(lang))
             {
-                Logger.Log("BinTree or Glossary not available. Returning empty list.", false, "Glossary::GetAllPossibleWords");
-                return new string[] {};
+                Logger.Log("BinTree or Glossary not available. Returning empty list.", Type.DEBUG);
+                return new string[] { };
             }
             var watch = Stopwatch.StartNew();
-            Logger.Log($"Input: {string.Join("", letters)}", false, "Glossary::GetAllPossibleWords");
+            Logger.Log($"Input: {string.Join("", letters)}", Type.DEBUG);
             LetterCountMatcher matcher = new LetterCountMatcher();
             string[] words = matcher.Match(letters, "#", _binTree[lang], _glossary[lang]);
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
-            Logger.Log($"Possible words: {words.Length}, elapsed time: {elapsedMs}ms", false, "Glossary::GetAllPossibleWords");
+            Logger.Log($"Possible words: {words.Length}, elapsed time: {elapsedMs}ms", Type.DEBUG);
             return words;
-        } 
+        }
     }
 }

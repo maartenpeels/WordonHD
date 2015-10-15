@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WordonHD_V2.Classes.Utils;
 
 namespace WordonHD_V2
@@ -13,7 +10,7 @@ namespace WordonHD_V2
         {
             Glossary glos = new Glossary();
             glos.Load(Localization.LangDutch);
-            var r = glos.GetAllPossibleWords(Localization.LangDutch, new List<string>() {"S", "N", "T", "E", "D", "B", "S"});
+            string[] r = glos.GetAllPossibleWords(Localization.LangDutch, new List<string>() {"A", "O", "F", "#", "T", "B", "S"});
             Console.ReadKey();
         }
     }

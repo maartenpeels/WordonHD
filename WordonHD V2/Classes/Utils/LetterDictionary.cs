@@ -385,7 +385,7 @@ namespace WordonHD_V2.Classes.Utils
             Symbols.Remove("#");
             Values = LetterList[lang].Values.ToList();
             Values.Remove(0);
-            Logger.Log($"Loaded language file: {Localization.Languagestring[lang]}");
+            Logger.Log($"Loaded language file: {Localization.Languagestring[lang]}", Type.INFO);
             SortLists();
         }
 

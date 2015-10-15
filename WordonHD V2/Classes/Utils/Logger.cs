@@ -1,20 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WordonHD_V2.Classes.Utils
 {
+    public enum Type
+    {
+        INFO,
+        GAME,
+        DEBUG
+    }
     static class Logger
     {
-        public static void Log(string txt, bool useCat = true, params string[] p)
+        private const Type LogType = Type.DEBUG;
+
+        public static void Log(string txt, Type t)
         {
-            if(useCat)
-                Console.WriteLine($"[{DateTime.Now.ToShortTimeString()}] {txt}");
-            else
+            if (t == Type.GAME)
             {
-                Console.WriteLine($"[{DateTime.Now.ToShortTimeString()}][{p[0]}] {txt}");
+                Console.WriteLine($"[{DateTime.Now.ToShortTimeString()}][GAME] {txt}");
+            }
+            else if (t == Type.INFO)
+            {
+                Console.WriteLine($"[{DateTime.Now.ToShortTimeString()}][INFO] {txt}");
+            }
+            else if (LogType == Type.DEBUG)
+            {
+                Console.WriteLine($"[{DateTime.Now.ToShortTimeString()}][DEBUG] {txt}");
             }
         }
     }
