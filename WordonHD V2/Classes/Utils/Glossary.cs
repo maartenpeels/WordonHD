@@ -42,25 +42,22 @@ namespace WordonHD_V2.Classes.Utils
             }
 
             _glossary.Add(lang, File.ReadAllLines(langPath));
-
-            byte[] langBytes = File.ReadAllBytes(blobPath);
-            _binTree.Add(lang, langBytes);
+            _binTree.Add(lang, File.ReadAllBytes(blobPath));
         }
 
-        public string[] GetAllPossibleWords(string lang, List<string> letters)
+        public List<string> GetAllPossibleWords(string lang, List<string> letters)
         {
+            var watch = Stopwatch.StartNew();
             if (!_binTree.ContainsKey(lang) || !_glossary.ContainsKey(lang))
             {
                 Logger.Log("BinTree or Glossary not available. Returning empty list.", Type.DEBUG);
-                return new string[] { };
+                return new List<string>();
             }
-            var watch = Stopwatch.StartNew();
             Logger.Log($"Input: {string.Join("", letters)}", Type.DEBUG);
             LetterCountMatcher matcher = new LetterCountMatcher();
-            string[] words = matcher.Match(letters, "#", _binTree[lang], _glossary[lang]);
+            List<string> words = matcher.Match(letters, "#", _binTree[lang], _glossary[lang]);
             watch.Stop();
-            var elapsedMs = watch.ElapsedMilliseconds;
-            Logger.Log($"Possible words: {words.Length}, elapsed time: {elapsedMs}ms", Type.DEBUG);
+            Logger.Log($"Possible words: {words.Count}, elapsed time: {watch.ElapsedMilliseconds}ms", Type.DEBUG);
             return words;
         }
     }

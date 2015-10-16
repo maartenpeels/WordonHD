@@ -43,10 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Utils\Glossary.cs" />
-    <Compile Include="Classes\Utils\LetterCountMatcher.cs" />
+    <Compile Include="Classes\Utils\GridTool.cs" />
+    <Compile Include="Classes\Utils\Solvers\LetterCountMatcher.cs" />
     <Compile Include="Classes\Utils\LetterDictionary.cs" />
     <Compile Include="Classes\Utils\Localization.cs" />
     <Compile Include="Classes\Utils\Logger.cs" />
+    <Compile Include="Classes\Utils\Solvers\ScoreSolver.cs" />
+    <Compile Include="Classes\Utils\Solvers\WordScore.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

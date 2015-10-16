@@ -455,7 +455,7 @@ namespace WordonHD_V2.Classes.Utils
                             Values[listIndex] = Values[listIndex + 1];
                             Values[listIndex + 1] = oldValue;
 
-                            Console.WriteLine($"Swapped {Symbols[listIndex]} => {Symbols[listIndex+1]}");
+                            Logger.Log($"Swapped {Symbols[listIndex]} => {Symbols[listIndex + 1]}", Type.DEBUG);
                         }
                         listIndex++;
                     }
@@ -465,5 +465,7 @@ namespace WordonHD_V2.Classes.Utils
                 break;
             }
         }
+
+        public static List<int> DetermineIndices(string word) => word.Select(t => Array.IndexOf(Symbols.ToArray(), t.ToString())).ToList();
     }
 }
