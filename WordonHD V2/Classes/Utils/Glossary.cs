@@ -45,7 +45,7 @@ namespace WordonHD_V2.Classes.Utils
             _binTree.Add(lang, File.ReadAllBytes(blobPath));
         }
 
-        public List<string> GetAllPossibleWords(string lang, List<string> letters)
+        public List<string> GetAllPossibleWords(string lang, string[] letters)
         {
             var watch = Stopwatch.StartNew();
             if (!_binTree.ContainsKey(lang) || !_glossary.ContainsKey(lang))

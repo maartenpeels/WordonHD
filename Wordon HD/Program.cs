@@ -20,12 +20,12 @@ namespace Wordon_HD
 
         static void Main(string[] args)
         {
-            //string grid = "1003034";
-            //string letters = "EEEOMHF";
-            //string wordons = "CH";
+            //string grid = "3002034";
+            //string letters = "NNLERNE";
+            //string wordons = "R";
 
             //Game g = new Game();
-            //Word best = g.PlayMove(letters, wordons, grid);
+            //List<Word> best = g.PlayMove(letters, wordons, grid);
 
             Task.Run(() => BeABot());
 

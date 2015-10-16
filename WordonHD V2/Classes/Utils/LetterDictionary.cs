@@ -7,8 +7,8 @@ namespace WordonHD_V2.Classes.Utils
     internal static class LetterDictionary
     {
         public static Dictionary<string, Dictionary<string, int>> LetterList;
-        public static List<string> Symbols;
-        public static List<int> Values;
+        public static string[] Symbols;
+        public static int[] Values;
 
         static LetterDictionary()
         {
@@ -381,10 +381,10 @@ namespace WordonHD_V2.Classes.Utils
 
         public static void InitVectors(string lang)
         {
-            Symbols = LetterList[lang].Keys.ToList();
-            Symbols.Remove("#");
-            Values = LetterList[lang].Values.ToList();
-            Values.Remove(0);
+            Symbols = LetterList[lang].Keys.ToArray();
+            Array.Resize(ref Symbols, Symbols.Length-1);
+            Values = LetterList[lang].Values.ToArray();
+            Array.Resize(ref Values, Values.Length - 1);
             Logger.Log($"Loaded language file: {Localization.Languagestring[lang]}", Type.INFO);
             SortLists();
         }
@@ -394,7 +394,7 @@ namespace WordonHD_V2.Classes.Utils
             int NaN = int.MaxValue;
             int charLength;
             bool _loc2_ = true;
-            int _loc4_ = Symbols.Count;
+            int _loc4_ = Symbols.Length;
             int _loc5_;
             int _loc7_;
             bool _loc8_;
@@ -466,6 +466,6 @@ namespace WordonHD_V2.Classes.Utils
             }
         }
 
-        public static List<int> DetermineIndices(string word) => word.Select(t => Array.IndexOf(Symbols.ToArray(), t.ToString())).ToList();
+        public static int[] DetermineIndices(string word) => word.Select(t => Array.IndexOf(Symbols.ToArray(), t.ToString())).ToArray();
     }
 }

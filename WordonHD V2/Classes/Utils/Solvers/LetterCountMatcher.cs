@@ -10,9 +10,9 @@ namespace WordonHD_V2.Classes.Utils
 {
     class LetterCountMatcher
     {
-        public List<string> Match(List<string> letters, string wildCard, byte[] binTree, string[] glossary)
+        public List<string> Match(string[] letters, string wildCard, byte[] binTree, string[] glossary)
         {
-            int jokersCount = letters.Count(wildCard.Equals); //kan ook nog, wat je leuker vind :P
+            int jokersCount = letters.Count(wildCard.Equals);
 
             List<string> lettersWithoutJokers = letters.Where(s => s != wildCard).ToList();
 
@@ -62,13 +62,13 @@ namespace WordonHD_V2.Classes.Utils
         private uint[] CountLetters(List<string> letters)
         {
             LetterDictionary.InitVectors(Localization.LangDutch);
-            List<string> symbols = LetterDictionary.Symbols;
-            List<string> strings = symbols.Select(s => s.Length < 2 ? s : $"({s})").ToList();
-            uint[] binaryAlphabet = new uint[strings.Count];
+            string[] symbols = LetterDictionary.Symbols;
+            string[] strings = symbols.Select(s => s.Length < 2 ? s : $"({s})").ToArray();
+            uint[] binaryAlphabet = new uint[strings.Length];
 
             for (int i = 0; i < letters.Count; i++)
             {
-                int index = strings.IndexOf(letters[i]);
+                int index = Array.IndexOf(strings, letters[i]);
                 if (index == -1)
                     Logger.Log($"{letters[i]} not found at {i}", Type.INFO);
                 else
