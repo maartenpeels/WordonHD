@@ -55,7 +55,7 @@ namespace WordonHD_V2.Classes.Utils
             }
             Logger.Log($"Input: {string.Join("", letters)}", Type.DEBUG);
             LetterCountMatcher matcher = new LetterCountMatcher();
-            List<string> words = matcher.Match(letters, "#", _binTree[lang], _glossary[lang]);
+            List<string> words = matcher.Match(letters, "#", _binTree[lang], _glossary[lang], lang);
             watch.Stop();
             Logger.Log($"Possible words: {words.Count}, elapsed time: {watch.ElapsedMilliseconds}ms", Type.DEBUG);
             return words;

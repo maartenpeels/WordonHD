@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using WordonHD_V2.Classes.Utils;
+﻿using System.Diagnostics;
+using System.Threading.Tasks;
+using WordonHD_V2.Classes;
 
 namespace WordonHD_V2
 {
@@ -9,24 +8,9 @@ namespace WordonHD_V2
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                Console.Write("letters: ");
-                List<string> letters = Console.ReadLine().ToCharArray().Select(i => i.ToString().ToUpper()).ToList();
-                Console.Write("wordons: ");
-                List<string> wordons = Console.ReadLine().ToCharArray().Select(i => i.ToString().ToUpper()).ToList();
-                Console.Write("grid: ");
-                int[] grid = Console.ReadLine().ToCharArray().Select(i => (int)i).ToArray();
-
-                Glossary glos = new Glossary();
-                glos.Load(Localization.LangDutch);
-
-                List<string> r = glos.GetAllPossibleWords(Localization.LangDutch, letters.Concat(wordons).ToArray());
-                ScoreSolver ss = new ScoreSolver();
-                WordScore word = ss.FindOptimalScore(r, letters, wordons, grid);
-
-                Console.WriteLine("");
-            }
+            NetworkWrapper wrapper = new NetworkWrapper("maartenpeels@gmail.com", "Maarten1012");
+            wrapper.Login();
+            wrapper.Listen();
         }
     }
 }

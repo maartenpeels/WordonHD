@@ -1,0 +1,32 @@
+package
+{
+   import flash.display.MovieClip;
+   import flash.text.TextField;
+   
+   public dynamic class libListProfileHeader_3x2 extends MovieClip
+   {
+       
+      public var lblName:TextField;
+      
+      public var lblBronzeWon:TextField;
+      
+      public var lblVerified:TextField;
+      
+      public var lblFBName:TextField;
+      
+      public var mcFBIcon:MovieClip;
+      
+      public var lblGoldWon:TextField;
+      
+      public var mcImage:MovieClip;
+      
+      public var lblSilverWon:TextField;
+      
+      public var mcCheck:MovieClip;
+      
+      public function libListProfileHeader_3x2()
+      {
+         super();
+      }
+   }
+}

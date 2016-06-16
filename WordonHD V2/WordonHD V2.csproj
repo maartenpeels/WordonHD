@@ -32,8 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,8 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\GameInstance.cs" />
+    <Compile Include="Classes\NetworkWrapper.cs" />
+    <Compile Include="Classes\PasswordHelper.cs" />
+    <Compile Include="Classes\Responses\Listen.cs" />
+    <Compile Include="Classes\Responses\LoginResponse.cs" />
     <Compile Include="Classes\Utils\Glossary.cs" />
     <Compile Include="Classes\Utils\GridTool.cs" />
+    <Compile Include="Classes\Utils\NetworkHelper.cs" />
     <Compile Include="Classes\Utils\Solvers\LetterCountMatcher.cs" />
     <Compile Include="Classes\Utils\LetterDictionary.cs" />
     <Compile Include="Classes\Utils\Localization.cs" />
@@ -55,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

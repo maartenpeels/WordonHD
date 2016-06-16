@@ -11,6 +11,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Design", "Design\Design.mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordonHD V2", "WordonHD V2\WordonHD V2.csproj", "{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moneys G", "Moneys G\Moneys G.csproj", "{6818613B-8FD5-401F-BB6F-9C68FAF5F57C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFD09AB9-6B9B-4957-8F92-B0BC52F1CB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6818613B-8FD5-401F-BB6F-9C68FAF5F57C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6818613B-8FD5-401F-BB6F-9C68FAF5F57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6818613B-8FD5-401F-BB6F-9C68FAF5F57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6818613B-8FD5-401F-BB6F-9C68FAF5F57C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
