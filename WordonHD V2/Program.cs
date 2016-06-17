@@ -8,7 +8,7 @@ namespace WordonHD_V2
     {
         static void Main(string[] args)
         {
-            NetworkWrapper wrapper = new NetworkWrapper("maartenpeels@gmail.com", "Maarten1012");
+            NetworkWrapper wrapper = new NetworkWrapper("maartenpeels@gmail.com", "...........");
             wrapper.Login();
             wrapper.Listen();
         }
